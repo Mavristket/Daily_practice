@@ -1,11 +1,14 @@
-num=1234
-rev=0
-temp=num
-while num>0:
-    rem=num%10
-    rev=rev*10+rem
-    num=num//10
-if num==temp:
-    print("number is palindrome")
+n = int(input("Enter the number: "))
+
+temp = n
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+
+if temp == rev:
+    print("Palindrome Number")
 else:
-    print("number is not palindrome")
+    print("Not a Palindrome Number")
